@@ -1,0 +1,142 @@
+---
+import whatsappIcon from '../assets/whatsapp.svg';
+---
+
+<section class="footer-support">
+	<div class="footer-support-content">
+		<h2 class="footer-support-title">¿Tienes dudas sobre cuál plan es el adecuado para ti?</h2>
+		<p class="footer-support-subtitle">Habla con nuestro equipo y recibe una asesoría personalizada.</p>
+
+		<a href="#" class="whatsapp-btn">
+			<div class="whatsapp-btn-text">
+				<span class="whatsapp-btn-line1">HABLAR CON UN</span>
+				<span class="whatsapp-btn-line2">CONSULTOR</span>
+				<span class="whatsapp-btn-line3">Dale clic y hablemos</span>
+			</div>
+			<img src={whatsappIcon.src} alt="WhatsApp" class="whatsapp-btn-icon" />
+		</a>
+	</div>
+</section>
+
+<style>
+	.footer-support {
+		width: 100%;
+		padding: 3rem 0;
+	}
+
+	.footer-support-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		max-width: 80ch;
+		margin: 0 auto;
+		padding: 0 0.5rem;
+	}
+
+	.footer-support-title {
+		font-size: 1.3rem;
+		font-weight: 700;
+		line-height: 1.2;
+		margin: 0;
+		max-width: 25ch;
+	}
+
+	.footer-support-subtitle {
+		font-size: 1.05rem;
+		line-height: 1.4;
+		margin: 0.5rem 0 0;
+		font-weight: 400;
+		max-width: 35ch;
+	}
+
+	.whatsapp-btn {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		margin-top: 2rem;
+		padding: 0.8rem 0.5rem;
+		border-radius: 0.75rem;
+		border: 3px solid transparent;
+		background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #4642d8, #a29dff);
+		background-origin: border-box;
+		background-clip: padding-box, border-box;
+		text-decoration: none;
+		cursor: pointer;
+		transition: transform 0.2s, box-shadow 0.2s;
+		max-width: 400px;
+		width: 100%;
+	}
+
+	.whatsapp-btn:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(70, 66, 216, 0.3);
+	}
+
+	.whatsapp-btn-text {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+
+	.whatsapp-btn-line1 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: #1a1a2e;
+		line-height: 1.2;
+	}
+
+	.whatsapp-btn-line2 {
+		font-size: 1.8rem;
+		font-weight: 800;
+		color: #4642d8;
+		line-height: 1.2;
+	}
+
+	.whatsapp-btn-line3 {
+		font-size: 1rem;
+		font-weight: 600;
+		color: #666;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		margin-top: 0.15rem;
+	}
+
+	.whatsapp-btn-icon {
+		width: 140px;
+		flex-shrink: 0;
+	}
+
+	@media (min-width: 768px) {
+		.footer-support-title {
+			font-size: 2.25rem;
+			max-width: 25ch;
+		}
+
+		.footer-support-subtitle {
+			font-size: 1.5rem;
+		}
+
+		.whatsapp-btn {
+			padding: 1rem 1.3rem;
+			max-width: 480px;
+		}
+
+		.whatsapp-btn-line1 {
+			font-size: 1.8rem;
+		}
+
+		.whatsapp-btn-line2 {
+			font-size: 2.2rem;
+		}
+
+		.whatsapp-btn-line3 {
+			font-size: 1.1rem;
+		}
+
+		.whatsapp-btn-icon {
+			width: 160px;
+			height: 160px;
+		}
+	}
+</style>
